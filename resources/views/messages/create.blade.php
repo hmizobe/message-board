@@ -13,6 +13,9 @@
     
 
     {!! Form::model($message, ['route' => 'messages.store']) !!}
+    
+        {!! Form::label('title', 'タイトル:') !!}
+        {!! Form::text('title') !!}
 
         {!! Form::label('content', 'メッセージ:') !!}
         {!! Form::text('content') !!}
@@ -21,7 +24,6 @@
 
     {!! Form::close() !!}
 
-<!-- Write content for each page here -->
 
 
 
